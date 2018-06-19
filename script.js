@@ -24,7 +24,7 @@ $('document').ready(function() {
 			type: 'GET',
 			dataType: 'json',
 			async: true,
-			url: `http://www.omdbapi.com/?s=${title}&y=${year}&i=${imdbId}&apikey=c16ed7f8`,
+			url: `https://www.omdbapi.com/?s=${title}&y=${year}&i=${imdbId}&apikey=c16ed7f8`,
 			beforeSend: () => {
 				$('.cards-container').html('<div>Loading...</div>');
 			},
