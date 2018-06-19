@@ -11,10 +11,10 @@ body {
 .header {
 	display: block;
 	position: relative;
-	background: #166999;
+	background: #ffdb58;
 	padding-top: 30px;
 	padding-bottom: 20px;
-	color: white;
+	color: #202020;
 	text-align: center;
 	width: 100%;
 	text-transform: uppercase;
@@ -24,7 +24,7 @@ body {
 .header:before {
 	content: '';
 	position: absolute;
-	background: #166999;
+	background: #ffdb58;
 	top: 0px;
 	left: 0px;
 	width: 100%;
@@ -46,9 +46,9 @@ button {
 	outline: none;
 	border: none;
 	background: transparent;
-	border: 1px solid white;
+	border: 1px solid black;
 	border-radius: 3px;
-	color: white;
+	color: black;
 	padding: 3px 6px;
 	text-transform: uppercase;
 	font-family: 'Tajawal', sans-serif;
@@ -57,8 +57,8 @@ button {
 }
 
 .what-button:hover {
-	color: #166999;
-	background: white;
+	color: #ffdb58;
+	background: black;
 	cursor: pointer;
 }
 
@@ -277,15 +277,16 @@ button {
 
 .footer {
 	position: absolute;
-	background: #166999;
+	background: #ffdb58;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	color: white;
+	color: black;
 	text-align: center;
 	width: 100%;
 	text-transform: uppercase;
 	font-family: 'Chelsea Market', cursive;
 	bottom: 0px;
+	box-shadow: 0.1px 0.1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .footer p {
