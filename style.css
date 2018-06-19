@@ -1,0 +1,407 @@
+:root {
+	font-size: 16px;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Tajawal', sans-serif;
+}
+
+.header {
+	display: block;
+	position: relative;
+	background: #166999;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	text-transform: uppercase;
+	font-family: 'Chelsea Market', cursive;
+}
+
+.header:before {
+	content: '';
+	position: absolute;
+	background: #166999;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	transform: skewY(1deg);
+	transform-origin: top left;
+	z-index: -1;
+	box-shadow: 0.1px 0.1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+	margin: 0px;
+	margin-bottom: 20px;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+	outline: none;
+	border: none;
+	background: transparent;
+	border: 1px solid white;
+	border-radius: 3px;
+	color: white;
+	padding: 3px 6px;
+	text-transform: uppercase;
+	font-family: 'Tajawal', sans-serif;
+	transition: all ease-in-out 0.2s;
+	font-size: 1rem;
+}
+
+.what-button:hover {
+	color: #166999;
+	background: white;
+	cursor: pointer;
+}
+
+/*modal*/
+.modal {
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	background: white;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	border-radius: 5px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 999;
+	top: -400px;
+	opacity: 0;
+	transition: all ease-in-out 0.3s;
+}
+
+.modal-active {
+	top: 40px;
+	opacity: 1;
+}
+
+.modal-title {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	padding: 20px 10px;
+	position: relative;
+}
+
+.modal-title h2 {
+	display: inline-block;
+	margin: 0px;
+}
+
+.modal-title span {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+
+.modal-body {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	padding: 20px 10px;
+}
+
+.modal-body p {
+	margin: 0px;
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	z-index: 998;
+	display: none;
+}
+
+.action-buttons {
+	width: 100%;
+	padding: 20px 20px;
+	text-align: right;
+}
+
+.close {
+	background: white;
+	transition: all ease-in-out 0.2s;
+	cursor: pointer;
+	border: 2px solid #202020;
+	color: #202020;
+	border-radius: 5px;
+}
+
+.close:hover {
+	background: #202020;
+	border: 2px solid #202020;
+	color: white;
+}
+
+.cross {
+	color: rgb(100, 100, 100);
+	transition: all ease-in-out 0.2s;
+}
+
+.cross:hover {
+	color: #202020;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 60px 0px;
+}
+
+.form-container {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #166999;
+	padding-bottom: 30px;
+}
+
+.form input {
+	width: 25%;
+	outline: none;
+	border: none;
+	border: 1px solid #d82d4c;
+	padding: 5px 6px;
+	margin-right: 15px;
+	color: #166999;
+	transition: all ease-in-out 0.2s;
+}
+
+.form input:focus {
+	border: 1px solid #166999;
+}
+
+.form input::placeholder {
+	font-family: 'Tajawal', sans-serif;
+	text-transform: uppercase;
+}
+
+.submit-button {
+	color: #d82d4c;
+	border: 1px solid #d82d4c;
+}
+
+.submit-button:hover {
+	cursor: pointer;
+	color: white;
+	background: #d82d4c;
+}
+
+.cards-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	padding: 30px 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img-res {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+}
+
+.card {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: calc(33.33% - 17px);
+	border: 1px solid #166999;
+	margin-right: 15px;
+	box-shadow: 2px 8px 10px -4px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	background: #166999;
+}
+
+.card-image {
+	width: 100%;
+}
+
+.card-body-container {
+	width: 100%;
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	bottom: 0;
+	left: 0;
+}
+
+.card-body {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	bottom: 0px;
+	left: 0px;
+	background: rgba(22, 105, 153, 0.7);
+	color: white;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+	padding: 10px 15px;
+}
+
+.card-title {
+	width: 100%;
+	font-size: 1.2rem;
+}
+
+.movie-type {
+	width: 100%;
+	font-size: .9rem;
+}
+
+.movie-year {
+	width: 50%;
+}
+
+.imdb-id {
+	width: 50%;
+}
+
+.footer-container {
+	position: absolute;
+	bottom: 0;
+	height: 90px;
+	width: 100%;
+}
+
+.footer {
+	display: block;
+	position: relative;
+	background: #166999;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	color: white;
+	text-align: center;
+	width: 100%;
+	text-transform: uppercase;
+	font-family: 'Chelsea Market', cursive;
+}
+
+.footer:before {
+	content: '';
+	position: absolute;
+	background: #166999;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	transform: skewY(1deg);
+	transform-origin: bottom right;
+	z-index: -1;
+	box-shadow: 0.1px 0.1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.footer p {
+	margin: 0px;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.error-message {
+	display: none;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: 2px solid #d82d4c;
+	border-radius: 5px;
+	background: rgba(216, 45, 76, 0.7);
+	color: white;
+	padding: 20px 0px;
+}
+
+@media screen and (max-width: 768px) {
+	.header:before {
+		transform: skewY(2deg);
+	}
+
+	.footer:before {
+		transform: skewY(2deg);
+	}
+
+	.modal {
+		width: 80%;
+	}
+
+	.card-title {
+		font-size: 1.1rem;
+	}
+
+	.movie-type {
+		font-size: .8rem;
+	}
+
+	.movie-year {
+		font-stretch: 0.9rem;
+	}
+
+	.imdb-id {
+		font-size: 0.9rem;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	.error-message {
+		width: 90%;
+		margin-bottom: 20px;
+		padding: 15px 0px;
+	}
+
+	.container {
+		width: 95%;
+	}
+
+	.form input {
+		width: calc(100% - 12px);
+		margin: 0px;
+		margin-bottom: 15px;
+	}
+
+	.cards-container {
+		width: 100%;
+		padding-bottom: 5px;
+	}
+
+	.container {
+		padding-bottom: 10px;
+	}
+
+	.card {
+		width: 100%;
+		margin: 0px;
+		margin-bottom: 25px;
+	}
+
+	.imdb-id {
+		font-size: 1rem;
+	}
+
+	.card-body {
+		padding: 30px 15px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.modal {
+		width: 90%;
+	}
+}
