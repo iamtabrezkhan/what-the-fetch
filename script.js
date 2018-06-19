@@ -29,6 +29,7 @@ $('document').ready(function() {
 				$('.cards-container').html('<div>Loading...</div>');
 			},
 			complete: () => {
+				$('.footer').css('position', 'relative');
 			},
 			success: (res) => {
 				console.log('requesting...')
@@ -45,7 +46,7 @@ $('document').ready(function() {
 						if(res.Poster === 'N/A') {
 							let tempCard = `<div class="card">
 												<div class="card-image">
-													<img class="img-res" src="http://via.placeholder.com/250x350">
+													<img class="img-res" src="https://via.placeholder.com/250x350">
 												</div>
 												<div class="card-body-container">
 													<div class="card-body">
@@ -103,7 +104,7 @@ $('document').ready(function() {
 							if(movie.Poster === 'N/A') {
 								let tempCard = `<div class="card">
 													<div class="card-image">
-														<img class="img-res" src="http://via.placeholder.com/250x350">
+														<img class="img-res" src="https://via.placeholder.com/250x350">
 													</div>
 													<div class="card-body-container">
 														<div class="card-body">
